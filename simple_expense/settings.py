@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m1=v4zp^gwc_efet9_4!2*bn_(61t@j+1)p9&w-!^dy++%ptqx'
 
+ALLOWED_HOSTS = ['*']  # Allows all hosts for local development
 
 # Application definition
 
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello_world',
 ]
 
 MIDDLEWARE = [
