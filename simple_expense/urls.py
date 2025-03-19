@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from hello_world import views as index_view
+from expenses import views as index_view
 
 urlpatterns = [
     path('', index_view.index, name='index'),
