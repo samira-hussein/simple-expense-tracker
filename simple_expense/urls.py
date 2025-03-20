@@ -19,6 +19,6 @@ from django.urls import path, include
 from expenses import views as index_view
 
 urlpatterns = [
-    path('', index_view.index, name='index'),
-    path('admin/', admin.site.urls),
+    path('', include('expenses.urls')),  # Include URLs from the 'expenses' app
+    path('admin/', admin.site.urls),  # Admin route
 ]

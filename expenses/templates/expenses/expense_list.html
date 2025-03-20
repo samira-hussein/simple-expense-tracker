@@ -1,0 +1,20 @@
+<!-- templates/expenses/expense_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense List</title>
+    <link rel="stylesheet" href="{% static 'expenses/style.css' %}">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <ul>
+        {% for expense in expenses %}
+        <li>{{ expense.name }} - ${{ expense.amount }}</li>
+        {% endfor %}
+    </ul>
+    <script src="{% static 'expenses/script.js' %}"></script>
+</body>
+</html>
+
