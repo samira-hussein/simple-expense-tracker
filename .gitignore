@@ -1,0 +1,24 @@
+# Ignore env files
+.env
+
+# Ignore local DB
+db.sqlite3
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Static & media (optional)
+staticfiles/
+media/
+
+# VSCode settings (optional)
+.vscode/
+
+# MacOS junk
+.DS_Store
