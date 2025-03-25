@@ -7,17 +7,30 @@ This is a simple expense tracker application built using Django for backend logi
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [User Design / UI / UX: Ideal User Profile](#user-design--ui--ux-ideal-user-profile)
 - [Features](#features)
-- [Installation Instructions](#installation-instructions)
+- [Tech stack](#tech-stack)
+- [Project scope](#project-scope)
 - [Technical Issues and Scope Creep](#technical-issues-and-scope-creep)
 - [Future Improvements](#future-improvements)
-- [Licensing](#licensing)
-
+- [AI Utilisation in Development: Impact on Workflow](#ai-utilisation-in-development-impact-on-workflow)
+- [Project Resources](#project-resources)
+- 
 ---
 
 ## Project Overview
 
 This project was built as a basic expense tracker to help users manage their financial data. Users can log in, register, and track their expenses in different categories. It includes basic functionality such as adding, editing, and deleting expenses. The app also uses the Django framework and leverages Django's built-in user authentication system.
+
+---
+## User Design / UI / UX: Ideal User Profile
+
+The Simple Expense Tracker is designed for individuals who need an easy and efficient way to track their daily expenses. The ideal user is someone who values simplicity, clarity, and accessibility in financial management. This includes students, young professionals, freelancers, and budget-conscious individuals who want a straightforward tool without unnecessary complexity.
+
+From a UI/UX perspective, the design will focus on a clean, minimalistic layout with an intuitive interface. Users should be able to quickly add, edit, delete, and review expenses with minimal effort. The colour scheme will be calm and neutral, ensuring readability and reducing visual clutter. Navigation will be simple and logical, with clear buttons and input fields. The design will also be mobile-friendly, allowing users to manage expenses on the go.
+
+The goal is to provide a smooth, user-friendly experience that makes expense tracking effortless and encourages users to develop better financial habits without feeling overwhelmed.
+
 
 ---
 
@@ -30,40 +43,17 @@ This project was built as a basic expense tracker to help users manage their fin
 
 ---
 
-## Installation Instructions
+## Tech stack
 
-### Prerequisites:
-- Python 3.x
-- Django 4.x
-- A local database or SQLite for testing.
+### langues :
+- HTML frontend 
+- CSS  frontend 
+- JS   frontend
+- Django (Python) backend 
 
-### Steps:
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-repository/expense-tracker.git
-    ```
+### Project scope 
 
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Apply migrations:
-    ```bash
-    python manage.py migrate
-    ```
-
-4. Create a superuser for admin access:
-    ```bash
-    python manage.py createsuperuser
-    ```
-
-5. Run the server:
-    ```bash
-    python manage.py runserver
-    ```
-
-6. Access the application at `http://127.0.0.1:8000/`
+The Simple Expense Tracker is a web application designed to help users efficiently manage their daily expenses. Built using Django (Python) for the backend, along with HTML, CSS, and JavaScript for the frontend, the application provides a user-friendly interface for adding, editing, deleting, and viewing expenses. Users can categorise their expenses, set budgets, and track spending over time. The project will utilise PostgreSQL as the database for securely storing expense records. Deployment will be managed via Heroku, ensuring accessibility from anywhere. Additionally, version control will be handled using GitHub, with a clear README file to document setup instructions and project details. The focus is on simplicity, ensuring ease of use while maintaining essential CRUD functionality.
 
 ---
 
@@ -92,14 +82,34 @@ While the current version of the project is functional, here are some potential 
 
 ---
 
-## Licensing
+## AI Utilisation in Development: Impact on Workflow 
 
-This project is open-source and available under the [MIT License](LICENSE).
+During the development of the Simple Expense Tracker, I relied on ChatGPT to resolve technical challenges efficiently, avoiding unnecessary code rewrites. Instead of manually debugging complex errors, I used precise prompts to identify issues, understand their root causes, and implement effective solutions.
+
+ChatGPT played a crucial role in debugging, identifying syntax errors, missing dependencies, and configuration issues, which streamlined the development process. It also helped with code optimisation, suggesting best practices for structuring Django views, models, and database queries.
+
+By integrating ChatGPT into my workflow, I significantly reduced development time, improved code quality, and maintained a smoother workflow, allowing me to focus on building a functional and user-friendly application.
+
+---
+
+## Project Resources
+
+
+The following resources were used during my project:
+
+ **YouTube Channels**:
+- [Net Ninja](https://www.youtube.com/@NetNinja)
+- [Coding Entrepreneurs](https://www.youtube.com/@CodingEntrepreneurs)
+- [Edutechional](https://www.youtube.com/@edutechional)
+
+ **Learning Management System (LMS)**:
+- Code Institute
+
+ **AI Assistance**:
+- ChatGPT for additional understanding and support
 
 ---
 
 **Notes**: 
 
 - The project focused on backend functionalities using Django and simple frontend design. It can be expanded further to include more interactive and dynamic features with JavaScript and other frontend technologies.
-- Make sure to keep the `static` files (like CSS, JS) in their correct locations for proper rendering.
- simple-expense-tracker
