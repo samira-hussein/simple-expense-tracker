@@ -80,7 +80,13 @@ While the current version of the project is functional, here are some potential 
 - **Real-Time Notifications**: Adding real-time notifications about changes to the data (new expenses, deleted expenses) could improve user interaction. This can be achieved through technologies like WebSockets or AJAX polling.
 - **Exporting Data**: Implementing the ability to export data (e.g., CSV, PDF) could be useful for users who want to analyze their expenses outside of the app.
 - **Expense Summary**: A summary view showing monthly or yearly spending totals per category could give users more insights into their finances.
-- **Unit Tests**: Writing unit tests for key parts of the application (e.g., form validation, views) could ensure the application works smoothly and prevent issues during future development.
+- **UI/design**: Improve the UI (CSS styling, better buttons, layout).
+
+- **Unit Tests**: Writing unit tests for key parts of the application (e.g., form validation, views) could ensure the application works smoothly and prevent issues during
+ future development.
+
+**Main probmlems I faced**
+- technical issues, like Heroku deployment problems and static files not loading. Debugging authentication took extra time.
 
 ---
 
