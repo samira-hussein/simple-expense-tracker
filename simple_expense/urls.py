@@ -21,4 +21,5 @@ from django.urls import path, include  # Import include to include app URLs
 urlpatterns = [
     path('admin/', admin.site.urls),  # Admin route
     path('', include('expenses.urls')),  # Include URLs from the 'expenses' app
+    path("accounts/", include("django.contrib.auth.urls")),
 ]

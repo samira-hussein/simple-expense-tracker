@@ -7,8 +7,11 @@ from pathlib import Path
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+import os 
+if os.path.isfile("env.py"):
+    import env 
 
-SECRET_KEY = config('SECRET_KEY')  # Get secret key from .env file
+SECRET_KEY = os.environ.get("SECRET_KEY")
 ALLOWED_HOSTS = ['simple-expense-84d01d0e9ff8.herokuapp.com', 'localhost', '127.0.0.1']
 
 
@@ -60,9 +63,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'simple_expense.wsgi.application'
 
 # Database configuration
-DATABASES = {
-    'default': dj_database_url.parse(config('DATABASE_URL'), conn_max_age=600)
-}
+DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -87,16 +88,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# For local development (static files served by Django itself)
+# For local development 
 STATICFILES_DIRS = [
     BASE_DIR / 'expenses' / 'static',
 ]
-
-# For production (Whitenoise handling static files)
 STATIC_ROOT = BASE_DIR / 'staticfiles' 
-
-# Static files storage
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
