@@ -1,20 +1,29 @@
-<!-- templates/expenses/expense_list.html -->
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Expense List</title>
-    <link rel="stylesheet" href="{% static 'expenses/style.css' %}">
-</head>
-<body>
-    <h1>Expense Tracker</h1>
+{% extends 'base_generic.html' %}
+
+{% block content %}
+    <h1>Expense List</h1>
+    <a href="{% url 'expense_form' %}">Add New Expense</a>
     <ul>
+        <!-- Loop through all expenses and display each one -->
         {% for expense in expenses %}
-        <li>{{ expense.name }} - ${{ expense.amount }}</li>
+            <li>
+                <span>{{ expense.name }} - ${{ expense.amount }} - {{ expense.category }}</span>
+
+                <!-- Button to toggle visibility of the details -->
+                <button class="toggle-details">Show Details</button>
+                
+                <!-- The expense details, initially hidden -->
+                <div class="expense-details" style="display: none;">
+                    <p>Details of {{ expense.name }}...</p>
+                </div>
+
+                <!-- Link to delete an expense, wrapped with the 'delete-expense' class -->
+                <a href="{% url 'expense_confirm_delete' expense.id %}" class="delete-expense">Delete</a>
+            </li>
         {% endfor %}
     </ul>
-    <script src="{% static 'expenses/script.js' %}"></script>
-</body>
-</html>
 
+{% endblock %}
+
+<!-- This div will show notifications, if any -->
+<div id="notifications"></div>

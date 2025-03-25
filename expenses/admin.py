@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Expense  # Import the Expense model
 
-# Register your models here.
+admin.site.register(Expense)  # Register the Expense model with the admin site
