@@ -51,6 +51,8 @@ The goal is to provide a smooth, user-friendly experience that makes expense tra
 - JS   frontend
 - Django (Python) backend 
 
+---
+
 ### Project scope 
 
 The Simple Expense Tracker is a web application designed to help users efficiently manage their daily expenses. Built using Django (Python) for the backend, along with HTML, CSS, and JavaScript for the frontend, the application provides a user-friendly interface for adding, editing, deleting, and viewing expenses. Users can categorise their expenses, set budgets, and track spending over time. The project will utilise PostgreSQL as the database for securely storing expense records. Deployment will be managed via Heroku, ensuring accessibility from anywhere. Additionally, version control will be handled using GitHub, with a clear README file to document setup instructions and project details. The focus is on simplicity, ensuring ease of use while maintaining essential CRUD functionality.
