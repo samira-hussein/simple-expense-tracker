@@ -1,7 +1,8 @@
 {% extends 'base_generic.html' %}
 
 {% block content %}
-    <h1>Expense List</h1>
+    <h2>Expense List</h2>
+    <p> Add any new expenses down below</p>
     <a href="{% url 'expense_form' %}">Add New Expense</a>
     <ul>
         <!-- Loop through all expenses and display each one -->

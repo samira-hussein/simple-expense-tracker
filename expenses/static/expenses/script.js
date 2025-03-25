@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggleButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const details = this.nextElementSibling; // Assuming the details are right after the button
+            const details = this.nextElementSibling; // for details are right after the button
             if (details.style.display === 'none') {
                 details.style.display = 'block';
                 this.textContent = 'Hide Details';
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Delete Expense Confirmation
-    const deleteButtons = document.querySelectorAll('.delete-expense'); // Assuming the delete button has this class
+    const deleteButtons = document.querySelectorAll('.delete-expense'); // for delete button has this class
     
     deleteButtons.forEach(button => {
         button.addEventListener('click', function(event) {

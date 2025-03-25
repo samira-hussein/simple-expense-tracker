@@ -17,6 +17,8 @@ ALLOWED_HOSTS = ['simple-expense-84d01d0e9ff8.herokuapp.com', 'localhost', '127.
 
 DEBUG = True
 
+LOGIN_REDIRECT_URL = 'expense_list'  # Redirect to the expense list after login
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',

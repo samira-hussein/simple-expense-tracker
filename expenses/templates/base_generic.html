@@ -9,19 +9,26 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="{% url 'expense_list' %}">Home</a></li>
-                <li><a href="{% url 'expense_form' %}">Add Expense</a></li>
-                <li><a href="{% url 'login' %}">Login</a></li>
-                <li><a href="{% url 'logout' %}">Logout</a></li>
-            </ul>
-        </nav>
+        <h1>Simple Expense Tracker</h1>
+        {% if user.is_authenticated %}
+            <p>Welcome, {{ user.username }}!</p>
+        {% else %}
+            <p>Welcome, Guest!</p>
+        {% endif %}
     </header>
-
+<section>
+    <nav>
+        <ul>
+            <li><a href="{% url 'expense_list' %}">Home</a></li>
+            <li><a href="{% url 'expense_form' %}">Add Expense</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </nav>
+</section>
     <main>
         {% block content %}
-        <!-- Content goes here -->
+
         {% endblock %}
     </main>
 
