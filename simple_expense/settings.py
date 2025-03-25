@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 ALLOWED_HOSTS = ['simple-expense-84d01d0e9ff8.herokuapp.com', 'localhost', '127.0.0.1']
 
 
-DEBUG = True
+DEBUG = False
 
 LOGIN_REDIRECT_URL = 'expense_list'  # Redirect to the expense list after login
 
